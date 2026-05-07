@@ -19,7 +19,7 @@
 		<meta name="format-detection" content="telephone=no"/>
 
 		<meta name="Generator" content="EditPlus®">
-		<meta name="Author" content="youngseo yook">ontack
+		<meta name="Author" content="youngseo yook">
 		
 		<title>ROC Auto System</title>
 		<meta name="Description" content="Combined heat and power generator, air compressor, engine type water pump, gas engine, electronic control devices">
@@ -57,9 +57,42 @@
 		<!-- Swiper-->
 		<link rel="stylesheet" href="common/swiper/css/swiper.min.css">
 		<script src="common/swiper/js/swiper.min.js"></script>
+		<style>
+			/* 메인 슬라이드 배경 이미지에 동영상 같은 줌/팬 효과(Ken Burns) 적용 */
+			.bxslider .slide1, .bxslider .slide2, .bxslider .slide3 {
+				position: relative;
+				overflow: hidden;
+				background: none !important;
+				z-index: 1;
+			}
+			.bxslider .slide1::before, .bxslider .slide2::before, .bxslider .slide3::before {
+				content: "";
+				position: absolute;
+				top: 0; left: 0; right: 0; bottom: 0;
+				background-position: center center;
+				background-repeat: no-repeat;
+				background-size: cover;
+				z-index: -1;
+				
+				/* Animation: scale and slow pan to feel like a video */
+				animation: kenburns 10s infinite alternate linear;
+				transition: transform 0.1s ease-out;
+				/* For JS parallax smooth following */
+			}
+			.bxslider .slide1::before { background-image: url('images/slide01.jpg'); }
+			.bxslider .slide2::before { background-image: url('images/slide02.jpg'); }
+			.bxslider .slide3::before { background-image: url('images/slide03.jpg'); }
 
-		
-
+			@keyframes kenburns {
+				0% {
+					transform: scale(1.0) translate(0, 0);
+				}
+				100% {
+					/* Zoom in to 1.3x and move slightly more */
+					transform: scale(2.0) translate(-3%, -3%);
+				}
+			}
+		</style>
 	</head>
 
 	<body>
@@ -98,11 +131,11 @@
 						</ul>
 					</li>
 
-					<li><a href="#">건설기계엔진교체 사업</a>
+					<li><a href="#">CONSTRUCTION Equipment Electrification Business</a>
 						<ul class="snb snb2">
-							<li><a href="bus01.html">사업개요</a></li>
-							<li><a href="bus02.html">A/S 대응체계</a></li>
-							<li><a href="bus03.html">협력사현황</a></li>
+							<li><a href="bus01.html">Business Overview</a></li>
+							<li><a href="bus02.html">A/S Response System</a></li>
+							<li><a href="bus03.html">Partners</a></li>
 							<li><a href="http://excionglobal.com" target="_blank">MORE</a></li>
 							
 						</ul>
