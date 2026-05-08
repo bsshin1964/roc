@@ -39,7 +39,9 @@ h2{font-size:32px;font-weight:500; color:#333; text-align:center; padding-top:30
 	font-size:18px;
 	line-height:1.4em;
 }
-
+.bxslider .slide2 h3, .bxslider .slide2 p {
+	text-shadow:0 0 5px black;
+}
 
 
 .bxslider .more {
@@ -179,8 +181,8 @@ section.product h3 {
 	font-size:36px;
 	color:#2e3192;
 	font-weight:700;
-	padding-top:85px;
-	padding-bottom:55px;
+	padding-top:50px;
+	padding-bottom:42px;
 }
 
 .benefit .row .dsc p {

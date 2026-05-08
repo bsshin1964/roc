@@ -7,7 +7,7 @@
 	.business .visual{background:url('../images/business_bg.jpg') 50% 100% no-repeat;}
 	.service .visual {background:url('../images/service_sub_new.jpg') 50% 100% no-repeat;}
 	.bus .visual {background:url('../images/change.png') 50% 100% no-repeat;}
-
+	
 .visual h2{font-size:32px; font-weight:600; text-align:center;color:#fff;text-shadow:2px 2px 2px gray; line-height:200px;}
 	.pro2 .visual h2{color:#fff;}
 .lnb{width:1200px;}
@@ -69,8 +69,6 @@ ul.lnb::after {display:block; clear:both; content:'';}
 	box-sizing:border-box;
 	padding: 0 5px;
 	float:left;
-	max-height: 390px;
-
 }
 
 #certification .row .imgbox img{
@@ -81,9 +79,6 @@ ul.lnb::after {display:block; clear:both; content:'';}
 #certification .contents p {
 	padding-top:10px;
 	padding-bottom:70px;
-}
-#certification.service .contents .data .row p {
-	font-size:16px;
 }
 
 /*location*/
@@ -117,6 +112,10 @@ ul.lnb::after {display:block; clear:both; content:'';}
 	text-align:left;
 	float:left;
 	box-sizing:border-box;
+}
+#location .map .row .col .td {
+	line-height:31px;
+	padding:15px 20px;
 }
 
 #location .map .row .col .th {
@@ -163,18 +162,21 @@ p b {
 	color:#53575d;
 	font-size:18px;
 	line-height:34px;
-	letter-spacing:-0.07em;
 }
 
 .product article h4, .solution article h4 {
-	background:url('../images/bul.png') left top no-repeat;
+	background-image:url('../images/bul.png');
+	background-repeat:no-repeat;
 	color:#003064;
 	font-size:30px;
 	text-align:left;
 	text-indent:30px;
 	font-weight:600;
-	height:30px;
+	line-height:1.4em;
 	margin:60px 0 20px;
+}
+.product article h4 {
+	background-position-y: 11px;
 }
 .row {
 }
@@ -303,10 +305,9 @@ float:left;
 }
  .solution article h4 {
 	padding-left:15px;
-	background-position: 15px 0;
+	background-position: 15px 11px;
 }
 
-/* data */
 
 #certification .certification.data .row  {
 	width:960px;
@@ -319,29 +320,9 @@ float:left;
 	border:1px solid #ddd;
 }
 
-#certification .certification.data .contents .row p {
-	font-size:16px !important;
+#certification.service .contents .data .row p {
+	font-size:16px;
 }
-
-
-#privacy article li{ list-style-position:inside !important;}
-#privacy h4{display:inline-block;padding-left:0;margin-bottom:10px;font-size:19px;color:#333;font-weight:normal;background:none;}
-#privacy h5{margin-top:20px;font-size:17px}
-#privacy h5:before{content:"▶";}
-#privacy article p, #privacy article li{font-size:16px;line-height:1.6em;}
-#privacy .depth1>li{margin-top:40px;list-style:decimal;}
-#privacy .depth2{margin-left:20px;}
-
-#privacy article ol li{margin-bottom:10px;list-style:lower-roman;}
-
-#privacy .depth3{display:block;margin-left:35px;margin-top:10px;}
-	#privacy article ul li{list-style:square;}
-#privacy .list-style-none li{margin-left:20px;margin-top:10px;list-style:none;}
-
-#privacy article dl{overflow:hidden;}
-#privacy article dt{clear:both;float:left;}
-#privacy article dt:after{content:" : ";}
-#privacy article dd{}
 
 
 .fifth > .col { width: 20%;}

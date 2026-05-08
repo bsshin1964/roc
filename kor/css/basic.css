@@ -14,7 +14,6 @@ body > header{
 	background-color:white;
 	position:fixed;
 	z-index:3000;
-	border-bottom:1px solid #ddd;
 }
 nav{
 	width:1300px; 
@@ -27,13 +26,12 @@ nav{
 }
 nav h1{
 	float:left;
-	margin-right:20px;
+	margin-right:50px;
 	margin-top:32px;
 }
 nav .gnb{
 	overflow:hidden;	
 	float:left;
-
 }
 nav .gnb::after {
 	display:block;
@@ -54,7 +52,7 @@ nav .gnb>li>a{
 	display:block;
 	height:85px; 
 	margin-bottom:6px;
-	font-size:17px;
+	font-size:18px;
 	font-weight:700;
 	text-align:center;
 	line-height:85px;
@@ -183,11 +181,11 @@ footer address .copy{
 						display:block;
 						width:100%;
 					}
-					.lang ul li:last-child {
-						border-left:none;
+					.lang ul li:first-child {
+						border-right:none;
 					}
 
-					.lang ul li:first-child {
+					.lang ul li:last-child {
 						border: 1px solid #aaa;
 					}
 
